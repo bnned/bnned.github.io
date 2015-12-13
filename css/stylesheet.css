@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/*=============================BEGIN CSS=================================*/
+
+body {
+  background: linear-gradient(to right, #1B1B1B 1px, transparent 1px), linear-gradient(to bottom, #1B1B1B 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-color: #000;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+
+}
+
+.container {
+
+}
+
+.logoContainer {
+  position: relative;
+  height: 150px;
+  width: 450px;
+  margin: 50px auto;
+}
+
+#logoBorder {
+  height: 150px;
+  width: 450px;
+  border: 3px #fff solid;
+  margin: 50px auto;
+}
+
+#logo {
+  position: absolute;
+  text-align: center;
+  line-height: 150px;
+  font-size: 100px;
+  font-family: 'Astloch', cursive;
+  color: white;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+	transition: 1s ease;
+}
+
+#logo:hover {
+  font-size: 110px;
+}
