@@ -45,6 +45,9 @@ blockquote, q {
 	quotes: "" "";
 }
 
+tab {
+	padding-left: 4em;
+}
 /*=============================BEGIN CSS=================================*/
 
 body {
@@ -66,7 +69,7 @@ html, body {
 
 }
 
-.logoContainer {
+#logoContainer {
   position: relative;
   height: 150px;
   width: 450px;
@@ -93,9 +96,130 @@ html, body {
   bottom: 0;
   right: 0;
   z-index: 1;
-	transition: 1s ease;
+	transition: .6s ease;
 }
 
 #logo:hover {
   font-size: 110px;
+	/*transform: translateZ(150px);*/
+}
+
+.mainBorder {
+	border: 3px #fff solid;
+	margin: 50px auto;
+  width: 450px;
+  height: 650px;
+}
+
+.navbar {
+	margin: 10px;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	transition: .6s ease;
+	font-family: Open Sans;
+}
+
+.navbar ul li a:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: .6s ease;
+	transform: scaleX(0);
+	margin: 0 auto;
+}
+
+.navbar ul li a:hover:after {
+	background: #fff;
+	transform: scaleX(1);
+	width: 100%;
+}
+
+.navbar a:hover {
+	font-size: 16px;
+}
+
+.mainBody {
+	color: #fff;
+	margin: 10px 20px;
+}
+
+.mainBody ul li {
+	margin-left: 4em;
+  list-style: circle;
+}
+
+.mainInfo {
+	display: flex;
+	justify-content: space-around;
+	border: 3px #fff solid;
+	margin-bottom: 8px;
+}
+
+.infoBlock {
+	position: relative;
+	width: 100%;
+	height: 125px;
+	opacity: 0.8;
+	overflow: hidden;
+}
+
+.infoBlock img {
+	display: block;
+	margin: 0 auto;
+}
+
+.titleBlock {
+	position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  line-height: 25px;
+}
+
+.titleBlock div {
+	font-family: OPEN SANS;
+	text-decoration: none;
+  color: #000;
+}
+
+#welcomeTab {
+	display: block;
+}
+
+#projectTab {
+	display: none;
+}
+
+#aboutTab {
+	display: none;
+}
+
+.mediaLinks {
+	text-align: center;
+  margin: 20px auto;
+}
+.mediaLinks a {
+	margin: 10px;
+	border: 1px #fff solid;
+	text-decoration: none;
+	color: #FFF;
+	padding: 3px;
+	font-size: 16px;
+	transition: .6s ease;
+}
+
+.mediaLinks a:hover {
+	font-size: 18px;
 }
